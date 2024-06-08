@@ -24,31 +24,54 @@ header{
 
 /* Membuat dua kolom yang float satu sama lain */
 nav{
-	float:left; width:30%;height:300px;background:#ccc;padding:20px;
+	float:left; 
+	width:30%;
+	height:300px;
+	background:#ccc;
+	padding:20px;
 }
 
 /* desain model hierarki menu */
 nav ul{
-	list-style-type:none; padding:0; article{
-	float:left; padding:20px; width:70%; background-color:#f1f1f1;height:300px;
+	list-style-type:none; 
+	padding:0; 
+}
+
+article{
+	float:left; 
+	padding:20px; 
+	width:70%; 
+	background-color:#f1f1f1;
+	height:300px;
+}
+
+/* Membersihkan sisa float setelah kolom */
+section:after{
+	content:"";
+	display:table;
+	clear:both;
 }
 
 /* Bagian footer */
 footer{
-	background-color: #777; padding: 10px; text-align: center; color:white;
+	background-color: #777; 
+	padding: 10px; 
+	text-align: center; 
+	color:white;
 }
 
-/* Responsive layout -membuat dua kolom terletak atas-bawah jika layer kecil */
+/* Responsive layout - membuat dua kolom terletak atas-bawah jika layer kecil */
 @media(max-width:600px){
 	nav,article{
-		width:100%; height:auto;
+		width:100%; 
+		height:auto;
 	}
 }
 </style>
 </head>
 <body>
 <header>
-<h2>Calon Presiden Indonesia 2024</h1>
+<h2>Calon Presiden Indonesia 2024</h2>
 </header>
 
 <section>
